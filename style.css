@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  color: #222;
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  padding: 1rem 0;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  padding: 80px 0;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+/* Styling for project preview */
+.project-preview {
+  margin-bottom: 20px;
+}
+
+.project-preview h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-preview p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.read-more-btn {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.read-more-btn:hover {
+  text-decoration: underline;
+}
