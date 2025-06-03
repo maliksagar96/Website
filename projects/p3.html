@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 1</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html">Home</a>
+    </nav>
+  </header>
+
+  <section class="project">
+    <h1>FDTD Allen Taflove Chapter 1</h1>
+    <p>Primary reasons for using FVTD:</p>
+    <ol>
+      <li>No Linear Algebra involved.</li>
+      <li>Accurate and robust. Errors that occur in FDTD models are well understood and can be bounded to provide accurate results.</li>
+      <li>Can calculate non-linear behaviours very easily.</li>
+      <li>Doesn't require calculation of any structure-dependent Green's function.</li>
+      <li>Easy to visualise.</li>
+    </ol>
+    <p>ABCs in the FDTD method allow waves to exit the domain with almost negligible reflections. Leapfrog method is used. Very friendly to parallel computing.</p>
+    <p>We will now write the wave equation in the discrete form:</p>
+
+  <div style="text-align: center; font-size: 1.5em;">
+    \( \frac{\partial^2 u}{\partial t^2} = c^2 \frac{\partial^2 u}{\partial x^2} \)
+  </div>
+
+  <p> The discretised equation looks like:br </p>
+  <div style="text-align:center;font-size: 1em;">
+    \(u_i^{n+1}  = (c\Delta t)^2(u^n_{i+1} - 2u_i^n + u_{i-1}^n) + 2u^n_i - u_i^{n-1}\)
+    <br>
+  </div>
+    
+  </section>
+  
+</body>
+</html>
+
